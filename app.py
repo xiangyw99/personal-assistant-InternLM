@@ -13,7 +13,7 @@ import streamlit as st
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.utils import logging
-
+import os
 from tools.transformers.interface import GenerationConfig, generate_interactive
 from openxlab.model import download
 logger = logging.get_logger(__name__)
